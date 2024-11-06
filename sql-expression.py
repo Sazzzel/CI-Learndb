@@ -54,7 +54,7 @@ with db.connect() as connection:
     # Query 5
     #select_query = album_table.select().where(album_table.c.ArtistId == 51)
 
-    # Query 4
+    # Query 6
     select_query = track_table.select().where(track_table.c.Composer == "Queen")
 
     results = connection.execute(select_query)
